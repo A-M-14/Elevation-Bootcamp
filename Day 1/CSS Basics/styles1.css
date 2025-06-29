@@ -1,0 +1,20 @@
+.text-large {
+    font-size: 38px;
+    color: blue;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.text-medium {
+    font-size: 20px;
+    color: red;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+.text-small {
+    font-size: 14px;
+    color: green;
+    font-family: 'Courier New', monospace;
+    text-decoration: underline;
+}
