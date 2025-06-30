@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles5.css">
 </head>
-
 <body>
 
-    <h1>Contact Form</h1>
-    
-    <form>
-        
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name">
-            <br><br>
-            
-            <label>Email Address</label>
-            <input type="email" placeholder="youremail@email.com">
-            <br><br>
-            
-            <label>Phone Number</label>
-            <input type="tel" placeholder="0526347518">
-            <br><br>
-            
-        </fieldset>
-        
-        <fieldset>
-            <legend>Contact Preferences</legend>
-            
-            <label>Preferred Contact Method</label><br>
-            <input type="radio" name="contactMethod" value="email"> Email
-            <input type="radio" name="contactMethod" value="phone"> Phone
-            <input type="radio" name="contactMethod" value="both"> Both
-            <br><br>
-    
-        </fieldset>
-        
-        <fieldset>
-            <legend>Message</legend>
-            
-            <label>Subject</label>
-            <select>
-                <option value="">Select a subject</option>
-                <option value="support">Customer Support</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select>
-            <br><br>
-            
-            <label>Message</label><br>
-            <textarea rows="6" placeholder="Enter your message here..."></textarea>
-            <br><br>
-            
-            <label>Priority Level</label>
-            <select>
-                <option value="low">Low</option>
-                <option value="medium" selected>Medium</option>
-                <option value="high">High</option>
-            </select>
-            <br><br>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Preferences</legend>
-            
-            <input type="checkbox"> Subscribe to our newsletter<br>
-            <input type="checkbox"> I agree to the terms and conditions *<br><br>            
-        </fieldset>
-        
-        <button type="submit">Submit Form</button>
-        <button type="reset">Reset Form</button>
-    </form>
+  <h1>Contact Form</h1>
+  
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name" />
+
+      <label>Email Address</label>
+      <input type="email" placeholder="youremail@email.com" />
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="0526347518" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Preferences</legend>
+
+      <label>Preferred Contact Method</label><br>
+      <label><input type="radio" name="contactMethod" value="email"> Email</label>
+      <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+      <label><input type="radio" name="contactMethod" value="both"> Both</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+
+      <label>Subject</label>
+      <select>
+        <option value="">Select a subject</option>
+        <option value="support">Customer Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Message</label>
+      <textarea rows="6" placeholder="Enter your message here..."></textarea>
+
+      <label>Priority Level</label>
+      <select>
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label><input type="checkbox"> Subscribe to our newsletter</label><br>
+      <label><input type="checkbox"> I agree to the terms and conditions *</label>
+    </fieldset>
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Reset Form</button>
+  </form>
 
 </body>
 </html>
