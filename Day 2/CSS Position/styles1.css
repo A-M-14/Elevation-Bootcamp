@@ -1,0 +1,41 @@
+
+.container {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.corner-text {
+    position: absolute;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
