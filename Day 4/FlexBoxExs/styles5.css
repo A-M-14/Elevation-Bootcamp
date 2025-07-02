@@ -1,0 +1,46 @@
+body {
+  font-family: Georgia, serif;
+}
+
+.flex-frame {
+  display: flex;
+  margin: 50px auto;
+  width: 700px;
+  height: 500px;
+  background: #d6d6d6;
+  padding: 40px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.top p {
+  margin: 0;
+  color: #3d4660;
+  line-height: 1.4;
+}
+
+.middle {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  background: cornflowerblue;
+}
+
+.four-squares {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.square-item {
+  width: 120px;
+  height: 120px;
+  background: cornflowerblue;
+}

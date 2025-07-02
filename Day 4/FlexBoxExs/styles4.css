@@ -1,0 +1,47 @@
+body {
+  font-family: Georgia, serif;
+}
+
+.frame {
+  display: flex;             
+  width: 900px;
+  height: 600px;
+  border: 4px solid #F08080; 
+  margin: 100px auto;         
+}
+
+.sidebar {
+  display: flex;
+  width: 180px;       
+  align-items: flex-end;     
+  justify-content: center;   
+  padding-bottom: 50px;      
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar {
+  width: 100px;
+  height: 14px;
+  background: #F08080;
+}
+
+.bar.short {                
+  width: 70px;
+}
+
+.content {
+  flex: 1;                  
+  border-left: 4px solid #F08080;   
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  line-height: 1.5;
+  color: #3d626a;          
+}

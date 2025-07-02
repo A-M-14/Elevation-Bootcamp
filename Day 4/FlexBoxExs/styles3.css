@@ -1,0 +1,33 @@
+body {
+  font-family: serif;
+}
+
+.flex-box {
+  display: flex;
+  width: 900px;
+  height: 700px;
+  border: 1px solid lightgray;
+  margin: 20px auto;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+}
+
+.separator {
+  width: 1px;
+  background-color: gray;
+  margin: 0;
+}
