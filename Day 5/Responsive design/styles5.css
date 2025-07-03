@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 50% 0%, #627dfa 0%, #4d55a7 100%);
+  min-height: 100vh;
+  padding: 32px; 
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40%;
+  background: linear-gradient(135deg, #627dfa 0%, #7d4fb9 100%);
+}
+
+.product-image img {
+  width: 100px;
+  height: 100px;
+  padding: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+  padding: 32px 40px;
+  gap: 20px;
+  color: #263248;
+}
+
+.product-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.product-desc {
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.product-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.product-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  color: #d44c40;
+}
+
+.btn-add {
+  padding: 12px 36px;
+  font: 600 16px/1 "Segoe UI", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #627dfa 0%, #7d4fb9 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    flex-direction: column;
+    max-width: 600px;
+  }
+  .product-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-title {
+    font-size: 24px;
+  }
+  .product-price {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 599px) {
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-details {
+    text-align: center;
+    align-items: stretch;
+  }
+  .product-buy {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+  .product-desc {
+    font-size: 14px;
+  }
+  .product-price {
+    font-size: 24px;
+  }
+
+  .btn-add {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 0;
+  }
+}
