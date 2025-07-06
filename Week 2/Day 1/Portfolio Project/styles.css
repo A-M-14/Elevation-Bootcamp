@@ -23,7 +23,7 @@ h1{
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 20px;
 }
 
 header > p{
@@ -49,11 +49,11 @@ nav > ul > li > a {
     display: flex;
     background-color: #EBEFF4;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 20px 0;
     margin-left: -100px;
     margin-right: -100px;
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .general-info{
@@ -97,5 +97,79 @@ nav > ul > li > a {
     object-fit: cover;
     /* border: 4px solid #2463EB; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    min-width: 400px; /* Without it, bars are not visible */
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 20px;
+}
+
+.skill-name {
+    min-width: 100px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.skill-bar {
+    flex: 1;
+    height: 12px;
+    background-color: #E5E7EB;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    max-width: 200px;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #2463EB;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+}
+
+.skill-progress[data-skill="90"] {
+    width: 90%;
+}
+
+.skill-progress[data-skill="85"] {
+    width: 85%;
+}
+
+.skill-progress[data-skill="80"] {
+    width: 80%;
+}
+
+.skill-progress[data-skill="75"] {
+    width: 75%;
 }
 
