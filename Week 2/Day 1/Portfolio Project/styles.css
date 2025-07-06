@@ -7,10 +7,17 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 h1{
     font-size: 2.5rem;
+}
+
+h2 { 
+    font-size: 2rem;
+    margin-bottom: 10px;
+
 }
 
 .container{
@@ -128,7 +135,6 @@ nav > ul > li > a {
 
 .skills li {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     margin-bottom: 16px;
     gap: 20px;
@@ -171,5 +177,69 @@ nav > ul > li > a {
 
 .skill-progress[data-skill="75"] {
     width: 75%;
+}
+
+.projects{
+    padding: 30px 0;
+    background-color: #F7FAFC;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+.projects >  h2 { 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-flex-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #1F2937;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+
+.btn-proj {
+    /* width: fit-content; */
+    align-self: flex-start;
+    padding: 12px 24px;
+    background-color: #F59E0B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
