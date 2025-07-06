@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    /* padding: 0; */
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+
