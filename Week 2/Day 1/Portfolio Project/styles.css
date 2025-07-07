@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,38 +8,41 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     font-size: 1rem;
-    
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
 
 h2 { 
     font-size: 2rem;
     margin-bottom: 10px;
-
 }
 
-.container{
+p {
+    color: #6B7280;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-header > p{
+header > p {
     font-size: 30px;
     font-weight: bold;
     color: #2463EB;
 }
-nav > ul{
+
+nav > ul {
     display: flex;
     list-style: none;
 }
@@ -52,7 +55,73 @@ nav > ul > li > a {
 }
 
 
-.home{
+/* For Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #6B7280;
+    margin: 3px 0;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #6B7280;
+}
+
+.mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1001;
+}
+/* Until here */
+
+
+.home {
     display: flex;
     background-color: #EBEFF4;
     justify-content: space-between;
@@ -63,7 +132,7 @@ nav > ul > li > a {
     padding-right: 120px;
 }
 
-.general-info{
+.general-info {
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +160,6 @@ nav > ul > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: -50px; */
     margin-right: 200px;
 }
 
@@ -112,13 +180,14 @@ nav > ul > li > a {
     margin-right: 25px;
 }
 
-.about-me{
+.about-me {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
 }
 
 
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
@@ -176,14 +245,14 @@ nav > ul > li > a {
     width: 75%;
 }
 
-.projects{
+
+.projects {
     padding: 30px 0;
     background-color: #F7FAFC;
     margin-left: -100px;
     margin-right: -100px;
     padding-left: 120px;
     padding-right: 120px;
-
 }
 
 .projects >  h2 { 
@@ -191,13 +260,13 @@ nav > ul > li > a {
     margin-bottom: 20px;
 }
 
-.projects-flex-box{
+.projects-flex-box {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.project-card{
+.project-card {
     display: flex;
     flex-direction: column;
     max-width: 350px;
@@ -224,7 +293,6 @@ nav > ul > li > a {
 }
 
 .project-card p {
-    color: #6B7280;
     margin-bottom: 20px;
 }
 
@@ -239,7 +307,7 @@ nav > ul > li > a {
     cursor: pointer;
 }
 
-.contact{
+.contact {
     padding-bottom: 40px;
 }
 
@@ -279,19 +347,16 @@ nav > ul > li > a {
 }
 
 
-.contact-info{
+.contact-info {
     display: flex;
     flex-direction: column;
-
 }
 
-.contact-info > p{
-    color: #64748B;
+.contact-info > p {
     line-height: 2;
-
 }
 
-.contact-info > h3{
+.contact-info > h3 {
     padding: 10px 0;
 }
 
@@ -314,7 +379,6 @@ nav > ul > li > a {
     font-size: 18px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #2463EB;
-
 }
 
 .social-icon:hover {
@@ -322,7 +386,8 @@ nav > ul > li > a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-footer{
+
+footer {
     background-color: #1E293B;
     color: white;
     padding: 20px;
@@ -331,5 +396,139 @@ footer{
     margin-right: -100px;
     padding-left: 120px;
     padding-right: 120px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .general-info {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .general-info h1 {
+        font-size: 2rem;
+    }
+
+    .general-info p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .general-info .btn {
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    .profile-picture {
+        order: 3;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 30px 20px;
+    }
+
+    .about-me {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .skills {
+        margin-right: 0;
+        min-width: auto;
+    }
+
+    .skills li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .skill-bar {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .projects {
+        padding: 30px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .projects-flex-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .contact {
+        padding: 30px 20px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-form {
+        min-width: 100%;
+    }
+
+    .contact-form input[type="text"], 
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
 
