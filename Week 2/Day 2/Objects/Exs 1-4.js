@@ -55,3 +55,56 @@ else if(reservations[newUserName].claimed) {
 
 
 
+// #4
+const date = 3
+
+const kitchen = {
+    owner: "Geraldine",
+    hasOven: false, // choose one
+    fridge: {
+        price: 500,
+        works: false, // choose one
+        items: [
+            { name: "cheese", expiryDate: 7 },
+            { name: "radish", expiryDate: 2 },
+            { name: "bread", expiryDate: 1 }
+        ]
+    }
+}
+
+const hasOven = kitchen.hasOven;
+const doesFridgeWork = kitchen.fridge.works;
+let isRadishExpired = date - kitchen.fridge.items[1].expiryDate;
+let fridgePrice = kitchen.fridge.price;
+
+
+if(hasOven && doesFridgeWork){
+
+  if(isRadishExpired > 0){
+    console.log(`Geraldine's radish expired ${isRadishExpired} day ago. Weird, considering her fridge works. Luckily, she has an oven to cook the radish in.`);
+  } else{
+    console.log("You can eat the radish!");
+  }
+}
+else if(!hasOven && doesFridgeWork){
+  if(isRadishExpired > 0){
+    console.log(`Geraldine's radish expired ${isRadishExpired} day ago. Weird, considering her fridge works. Too bad she doesn't have an oven to cook the radish in.`);
+  } else{
+    console.log("You can eat the radish!");
+  }
+}
+else if(hasOven && !doesFridgeWork){
+  if(isRadishExpired > 0){
+    console.log(`Geraldine's radish expired ${isRadishExpired} day ago. Probably because her fridge doesn't work. Luckily, she has an oven to cook the radish in. And she'll have to pay ${fridgePrice * 0.5} to fix the fridge.`);
+  } else{
+    console.log("You can eat the radish!");
+  }
+}
+else{
+  if(isRadishExpired > 0){
+    console.log(`Geraldine's radish expired ${isRadishExpired} day ago. Probably because her fridge doesn't work. Too bad she doesn't have an oven to cook the radish in. And she'll have to pay ${fridgePrice * 0.5} to fix the fridge.`);
+  } else{
+    console.log("You can eat the radish!");
+  }
+}
+
