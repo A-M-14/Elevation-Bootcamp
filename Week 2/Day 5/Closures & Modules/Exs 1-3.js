@@ -52,14 +52,12 @@ bank.showBalance() //should print 950
 
 // #3
 const SongsManager = function(){
-
     const songs = {
         "sax": "3JZ4pnNtyxQ",
         "how long": "CwfoyVa980U"
     }
 
     const addSong = function(name, url){
-
         songs[name] = url.split('v=')[1]
     }
 
@@ -71,7 +69,6 @@ const SongsManager = function(){
     return {
         addSong, getSong
     }
-
 }
 
 const songsManager = SongsManager()
