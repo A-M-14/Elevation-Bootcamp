@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "e10021",
+    "name": "Gillian",
+    "department": "Finance",
+    "salary": 2000
+  },
+  {
+    "_id": "e10725",
+    "name": "Tibor",
+    "department": "Design",
+    "salary": 1200
+  },
+  {
+    "_id": "e10041",
+    "name": "Anisha",
+    "department": "Finance",
+    "salary": 2300
+  },
+  {
+    "_id": "e10411",
+    "name": "Jakub",
+    "department": "Marketing",
+    "salary": 1600
+  },
+  {
+    "_id": "e11995",
+    "name": "Mar",
+    "department": "Marketing",
+    "salary": 1300
+  },
+  {
+    "_id": "e10732",
+    "name": "Nisha",
+    "department": "Design",
+    "salary": 1200
+  }
+]
