@@ -1,0 +1,8 @@
+# Ignore everything in this directory
+*
+
+# But don't ignore main.js
+!main.js
+
+# Don't ignore this .gitignore file itself
+!.gitignore
