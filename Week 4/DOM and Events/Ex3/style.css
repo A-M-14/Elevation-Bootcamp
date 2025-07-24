@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
