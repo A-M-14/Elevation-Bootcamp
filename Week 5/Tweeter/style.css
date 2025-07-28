@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f7f9fa;
+  padding: 20px;
+  color: #14171a;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #14171a;
+}
+.new-post {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+#post-input {
+  flex: 1;
+  padding: 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#post-input:focus {
+  border-color: #1da1f2;
+}
+#post-button {
+  padding: 16px 32px;
+  border: none;
+  background: #1da1f2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  min-width: 120px;
+}
+#post-button:hover {
+  background: #1991db;
+}
+.post {
+  background: white;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.post .post-text {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #14171a;
+}
+.delete-post {
+  background: #e0245e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: block;
+}
+.delete-post:hover {
+  background: #c91e54;
+}
+.comments {
+  margin-top: 16px;
+  border-top: 1px solid #f1f3f4;
+  padding-top: 12px;
+}
+.comment {
+  padding: 8px 0;
+  border-top: 1px solid #f1f3f4;
+  display: flex;
+  align-items: flex-start;
+}
+.comment:first-child {
+  border-top: none;
+}
+.delete-comment {
+  color: #e0245e;
+  cursor: pointer;
+  margin-right: 10px;
+  flex-shrink: 0;
+  padding: 2px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.delete-comment:hover {
+  color: #c91e54;
+}
+.comment-text {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #536471;
+}
+.comment-input {
+  width: 400px;
+  padding: 10px 12px;
+  margin-top: 12px;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+  display: inline-block;
+  height: 40px;
+  box-sizing: border-box;
+}
+.comment-input:focus {
+  border-color: #1da1f2;
+}
+.comment-button {
+  padding: 10px 16px;
+  margin-left: 12px;
+  margin-top: 12px;
+  border: none;
+  background: #1da1f2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: background-color 0.2s;
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  box-sizing: border-box;
+}
+.comment-button:hover {
+  background: #1991db;
+}
