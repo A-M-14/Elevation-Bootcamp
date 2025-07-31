@@ -1,10 +1,10 @@
-import { APIService } from './api-service.js';
+import { APIService } from "./api-service.js";
 
 export class Controller {
   constructor(view) {
     this.view = view;
     this.view.bindGenerate(this.loadAll.bind(this));
-    
+
     // Load initial data when the app starts
     this.loadAll();
   }
