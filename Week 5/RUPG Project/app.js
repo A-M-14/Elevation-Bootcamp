@@ -115,3 +115,8 @@ class Controller {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const view = new View();
+  new Controller(view);
+});
