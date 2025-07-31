@@ -28,6 +28,27 @@ header.profile-header {
   border-radius: 0.5rem;
 }
 
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-main img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+#generate-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #10b981;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+}
+
 .friends-sidebar {
   background: #0284c7;
   color: white;
