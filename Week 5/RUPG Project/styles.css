@@ -18,6 +18,11 @@ body {
   margin: 2rem auto;
 }
 
+.main-layout {
+  display: flex;
+  gap: 1rem;
+}
+
 header.profile-header {
   background: #0284c7;
   color: white;
@@ -54,6 +59,8 @@ header.profile-header {
   color: white;
   padding: 1rem;
   border-radius: 0.5rem;
+  flex: 0 0 300px;
+  height: fit-content;
 }
 
 .friends-sidebar ul {
@@ -69,6 +76,7 @@ main.content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex: 1;
 }
 .content section {
   background: white;
