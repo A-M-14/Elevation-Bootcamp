@@ -43,3 +43,19 @@ header.profile-header {
 .friends-sidebar li {
   margin: 0.5rem 0;
 }
+
+main.content {
+  grid-area: content;
+  display: grid;
+  gap: 1.5rem;
+}
+.content section {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.quote p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
