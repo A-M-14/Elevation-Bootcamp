@@ -59,3 +59,11 @@ main.content {
   font-style: italic;
   margin-bottom: 0.5rem;
 }
+
+.pokemon {
+  text-align: center;
+}
+.pokemon img {
+  width: 120px;
+  height: 120px;
+}
