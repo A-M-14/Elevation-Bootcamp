@@ -45,8 +45,8 @@ header.profile-header {
 }
 
 main.content {
-  grid-area: content;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 .content section {

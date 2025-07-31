@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random User Generator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <div id="app">
-    <header class="profile-header">
-      <div class="profile-main">
-        <img id="profile-pic" src="" alt="Profile Picture">
-        <div>
-          <h1 id="profile-name"></h1>
-          <p id="profile-location"></p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="profile-header">
+        <div class="profile-main">
+          <img id="profile-pic" src="" alt="Profile Picture" />
+          <div>
+            <h1 id="profile-name"></h1>
+            <p id="profile-location"></p>
+          </div>
         </div>
-      </div>
-      <button id="generate-btn">Generate User</button>
-    </header>
+        <button id="generate-btn">Generate User</button>
+      </header>
 
-    <aside class="friends-sidebar">
-      <h2>Friends</h2>
-      <ul id="friends-list"></ul>
-    </aside>
+      <aside class="friends-sidebar">
+        <h2>Friends</h2>
+        <ul id="friends-list"></ul>
+      </aside>
 
-    <main class="content">
-      <section class="quote">
-        <h3>Favorite Quote</h3>
-        <p id="quote-text"></p>
-        <p id="quote-author"></p>
-      </section>
+      <main class="content">
+        <section class="quote">
+          <h3>Favorite Quote</h3>
+          <p id="quote-text"></p>
+          <p id="quote-author"></p>
+        </section>
 
-    <section class="pokemon">
-        <img id="pokemon-img" src="" alt="Pokemon Sprite">
-        <p id="pokemon-name"></p>
-    </section>
+        <section class="pokemon">
+          <img id="pokemon-img" src="" alt="Pokemon Sprite" />
+          <p id="pokemon-name"></p>
+        </section>
 
-   </div>
-<script type="module" src="app.js"></script>
-</body>
+        <section class="about">
+          <h3>About Me</h3>
+          <p id="about-text"></p>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
