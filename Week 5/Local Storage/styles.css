@@ -1,0 +1,18 @@
+#wisdom-container {
+  margin-top: 1em;
+}
+
+.wisdom {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.delete-btn {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
